@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decryption</title>
+    <link rel="stylesheet" href="decrypt.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        
+        <div class="sayfalar">
+            <a href="#"> <div class="topbrand"></div></a>
+            <a href="index.html" id="sayfalarenc" class="title1">Encryption</a>
+            <a href="decrypt.html" id="sayfalardec" class="title2">Decryption</a>
+         </div>
+    </header>
+        
+    <div class="content">
+        <div class="icerik">
+        <input type="text" name="textinputarea" id="encrygiris" autocomplete="off"  placeholder="Enter encrypted text to be Decrypt" style="width: 90% !important; height: 50px; margin: 10px !important;" class="metingiris"  onkeypress="return (event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 44 && event.charCode <= 44)">
+    
+
+        <input type="text" name="textinputarea" id="ekeygiris" autocomplete="off" placeholder="Enter plain key" onkeypress="return (event.charCode >= 65 && event.charCode <= 90) || (event.charCode == 32) || (event.charCode >= 97 && event.charCode <= 122)">
+
+    <br>
+    <br>
+    <button id="decrypt" onclick="decrypt()">DECRYPT</button>
+    <br>
+    <br>
+    <br>
+    <!--
+    <h4 id="textinput"></h4>
+    <h4 id="keyinput"></h4>
+    -->
+
+    <h3 id="sifrelendiwarn"></h3>
+    <div class="sonucsahnesi">
+    <textarea id="decryptedsonuc" cols="50%" rows="10" title="Click for the copy" readonly onclick="copyToclipboardd()">
+    </textarea>
+    <p class="copycb">Click to copy to clipboard</p>
+    </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>Created by ♥ K.Eray Özaydın [<a href="https://kamileray.tk" target="_blank" style="text-decoration: none; color: #FFD369;">kamileray.tk</a>]</p>
+      </div>
+</body>
+</html>

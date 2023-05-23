@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+}
+body { 
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: #EEEEEE; */
+  }
+
+header{
+    background-color: #393E46;
+    overflow: hidden;
+    padding: 10px 10px;
+    
+}
+.topbrand{
+    position: static;
+    background-image: url(WithoutLogoTrans.png);
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    user-select: none;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.sayfalar{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+}
+.title1{
+
+    color: #EEEEEE;
+    float: left;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 25px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-left: 10px;
+    border: 1px solid;
+    transition: 0.2s;
+    
+}
+.title1:hover{
+    border: 1px solid;
+    box-shadow: 2px 4px #EEEEEE;
+    transition: 0.2s;
+}
+.title2{
+
+    color: #EEEEEE;
+    float: left;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 25px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-left: 10px;
+    border: 1px solid #FFD369;
+    transition: 0.2s;
+    
+}
+.title2:hover{
+    border: 1px solid;
+    box-shadow: 2px 4px #EEEEEE;
+    transition: 0.2s;
+}
+.content{
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    box-shadow: 1px;
+
+}
+.icerik{
+	width: 100%;
+    height: auto;
+    float: left;
+    background: #EEEEEE;
+    margin-bottom: 30px;
+    border-radius: 10px;
+
+}
+input{
+    border: 2px solid #222831;
+    box-shadow: 2px 2px #222831;
+    color: #222831;
+}
+input:focus{
+    box-shadow: 0px 0px;
+}
+.icerik input[type=text], select{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 10px 10px;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#decrypt{
+    display:inline-block;
+    width: 100px;
+    height: 50px;
+    padding: 0.35em 1.2em;
+    
+    margin: 10px;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+
+    border: 2px solid #222831;
+    box-shadow: 2px 4px #222831;
+    background-color: #FFD369;
+    cursor: pointer;
+
+
+}
+#sifrelendiwarn{
+    margin: 10px;
+    color: #222831;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 3px;
+}
+#decryptedsonuc{
+    background-color: #FFFFFF;
+    resize: none;
+    margin: 10px;
+    color: red;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#decryptedsonuc:hover{
+    background-color: #EEEEEE;
+}
+.sonucsahnesi{
+    position: relative;
+}
+.copycb{
+    z-index: 2;
+    color: #222831;
+    font-weight: bold;
+    position: absolute;
+    left: 100px;
+    bottom: 70px;
+    display: none;
+    transition: 0.5s;
+    opacity: 0.7;
+}
+#decryptedsonuc:hover + .copycb{
+    display: block;
+    transition: 0.5s;
+    color: #393E46;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #393E46;
+    color: white;
+    text-align: center;
+ }
+
+ @media only screen and (max-width: 443px) {
+    .sayfalar{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    }
+    .title1, .title2{
+        margin-top: 10px;
+    }
+    .topbrand{
+        display: none;
+    }
+
+    #encrygiris{
+        width: 100% !important;
+        margin-top: 0;
+    }
+    .copycb{
+        position: absolute;
+        top: 100px;
+        left: 30px;
+        opacity: 0.7;
+    }
+    #decryptedsonuc{
+        width: 80%;
+        height: 450px;
+    }
+}
