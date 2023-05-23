@@ -1,4 +1,4 @@
-<p align="right"><a href="/docs/README-TR.md">🇹🇷 Türkçe</a></p>
+<p align="right"><a href="/docs/README-TR.md"><img src="/docs/flag-tr.png" alt="TR" width="50" height="50"></a></p>
 
 ![Cryptography](/img/talk.png)
 
