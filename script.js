@@ -200,24 +200,6 @@ document.getElementById("sifrelendiwarn").innerHTML = "Decrypted Text:"
 document.getElementById("decryptedsonuc").innerHTML = sondecryptednumber;
 
 
-
-
-
-
-
-
-
-// Şifreli kelimeyi virgüllerden ayırarak bir dizi içerisinde döndür.
-// Key yine aynı şekilde sayı karşılığı dönecek (Array içerisinde) (1)
-
-// Şifreli kelimenin array içindeki rakamlarından key'in array içindeki sayı karşılıklarını tek tek birbirinden çıkart.
-// Çıkartılarak bulunan sonucu yine array içerisinde döndür.
-// Array içerisinde dönen sonuç rakamlarının alphabe karşılıklarını tek tek yazdırarak sonuç olarak kullanıcının karşısına çıkart. (2)
-
-// Alfabe gereklilikleri :
-// 1) Harflerin => sayı karşılığı
-// 2) Sayıların => Harf karşılığı
-
-
+    
 
 }
