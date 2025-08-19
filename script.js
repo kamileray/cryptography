@@ -30,9 +30,9 @@ var sonuc = s.substring(0,son);
 // TEXT-KEY Harf Karakter Sayısı Eşitleme #####//
 
 //var alphabet = [1=a,b=2,c=3,d=4,e=5,f=6,g=7,h=8,i=9,j=10,k=11,l=12,m=13,n=14,o=15,p=16,q=17,r=18,s=19,t=20,u=21,v=22,w=23,x=24,y=25,z=26];
-var alphabet = {0:" ",1:"a",2:"b",3:"c",4:"d",5:"e",6:"f",7:"g",8:"h",9:"i",10:"j",11:"k",12:"l",13:"m",14:"n",15:"o",16:"p",17:"q",18:"r",19:"s",20:"t",21:"u",22:"v",23:"w",24:"x",25:"y",26:"z"};
-var numeric = {" ":0,"a":1,"b":2,"c":3,"d":4,"e":5,"f":6,"g":7,"h":8,"i":9,"j":10,"k":11,"l":12,"m":13,"n":14,"o":15,"p":16,"q":17,"r":18,"s":19,"t":20,"u":21,"v":22,"w":23,"x":24,"y":25,"z":26};
-var alplength = Object.keys(alphabet).length // Alfabemizin uzunluğu(length) 26
+var alphabet = {0:" ",1:"a",2:"b",3:"c",4:"d",5:"e",6:"f",7:"g",8:"h",9:"i",10:"j",11:"k",12:"l",13:"m",14:"n",15:"o",16:"p",17:"q",18:"r",19:"s",20:"t",21:"u",22:"v",23:"w",24:"x",25:"y",26:"z",27:"0",28:"1",29:"2",30:"3",31:"4",32:"5",33:"6",34:"7",35:"8",36:"9",37:"ı",38:"ç",39:"ş",40:"ö",41:"ü",42:"ğ",43:"!",44:'"',45:"#",46:"$",47:"%",48:"&",49:"'",50:"(",51:")",52:"*",53:"+",54:",",55:"-",56:".",57:"/",58:":",59:";",60:"<",61:"=",62:">",63:"?",64:"@"};
+var numeric = {" ":0,"a":1,"b":2,"c":3,"d":4,"e":5,"f":6,"g":7,"h":8,"i":9,"j":10,"k":11,"l":12,"m":13,"n":14,"o":15,"p":16,"q":17,"r":18,"s":19,"t":20,"u":21,"v":22,"w":23,"x":24,"y":25,"z":26,"0":27,"1":28,"2":29,"3":30,"4":31,"5":32,"6":33,"7":34,"8":35,"9":36,"ı":37,"ç":38,"ş":39,"ö":40,"ü":41,"ğ":42,"!":43,'"':44,"#":45,"$":46,"%":47,"&":48,"'":49,"(":50,")":51,"*":52,"+":53,",":54,"-":55,".":56,"/":57,":":58,";":59,"<":60,"=":61,">":62,"?":63,"@":64};
+var alplength = Object.keys(alphabet).length // Alfabemizin uzunluğu(length)
                               
 //##### TEXT HARF DEĞERLERİ YAZDIRMAK //
 var textsplit = text.split(""); //sonuc text değeri splitlenir ["e","r","a","y","e","r","a"]
@@ -124,11 +124,11 @@ var x = document.getElementById("encrygiris").value;
 var z = document.getElementById("ekeygiris").value;
 
 if(x == ""){
-    alert("Girdi boş bırakılamaz!")
+    alert("User input cannot be left blank!")
     return false;
 }
 if(z == ""){
-    alert("Girdi boş bırakılamaz!")
+    alert("User input cannot be left blank!")
     return false;
 }
 
@@ -153,9 +153,8 @@ var sonuc = s.substring(0,son); // Eşitlenmiş key değeri
 
 // TEXT-KEY Harf Karakter Sayısı Eşitleme #####//
 
-var alphabet = {0:" ",1:"a",2:"b",3:"c",4:"d",5:"e",6:"f",7:"g",8:"h",9:"i",10:"j",11:"k",12:"l",13:"m",14:"n",15:"o",16:"p",17:"q",18:"r",19:"s",20:"t",21:"u",22:"v",23:"w",24:"x",25:"y",26:"z"};
-var alplength = Object.keys(alphabet).length // Alfabemizin uzunluğu(length) 26
-
+var alphabet = {0:" ",1:"a",2:"b",3:"c",4:"d",5:"e",6:"f",7:"g",8:"h",9:"i",10:"j",11:"k",12:"l",13:"m",14:"n",15:"o",16:"p",17:"q",18:"r",19:"s",20:"t",21:"u",22:"v",23:"w",24:"x",25:"y",26:"z",27:"0",28:"1",29:"2",30:"3",31:"4",32:"5",33:"6",34:"7",35:"8",36:"9",37:"ı",38:"ç",39:"ş",40:"ö",41:"ü",42:"ğ",43:"!",44:'"',45:"#",46:"$",47:"%",48:"&",49:"'",50:"(",51:")",52:"*",53:"+",54:",",55:"-",56:".",57:"/",58:":",59:";",60:"<",61:"=",62:">",63:"?",64:"@"};
+var alplength = Object.keys(alphabet).length // Alfabemizin uzunluğu(length)
 
 
 //##### KEY SAYI DEĞERLERİ YAZDIRMAK //
@@ -184,10 +183,11 @@ for(sayilar=0; sayilar<sonuckelime.length; sayilar++){
 
 
 for(w=0; w < decryptednumber.length; w++){ // w değerini, keyimizin kaç harfli olduğunu kontrol etmek için ayarladık.
-
+    
     for(m=0; m < alplength; m++){
         if(decryptednumber[w] == m){
             decryptednumber[w] = alphabet[m];
+            
         }
     }
 }

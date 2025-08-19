@@ -7,6 +7,7 @@
     <title>Decryption</title>
     <link rel="stylesheet" href="decrypt.css">
     <script src="script.js"></script>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/5003/5003773.png" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -19,11 +20,11 @@
     </header>
         
     <div class="content">
-        <div class="icerik">
-        <input type="text" name="textinputarea" id="encrygiris" autocomplete="off"  placeholder="Enter encrypted text to be Decrypt" style="width: 90% !important; height: 50px; margin: 10px !important;" class="metingiris"  onkeypress="return (event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 44 && event.charCode <= 44)">
+        <div class="icerik" style="box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">
+        <input type="text" name="textinputarea" id="encrygiris" autocomplete="off"  placeholder="Enter encrypted text to be Decrypt" style="width: 90% !important; height: 50px; margin: 10px !important;" class="metingiris"  onkeypress="return (event.charCode >= 32 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 305 || event.charCode == 231 || event.charCode == 351 || event.charCode == 246 || event.charCode == 252 || event.charCode == 287)">
     
 
-        <input type="text" name="textinputarea" id="ekeygiris" autocomplete="off" placeholder="Enter plain key" onkeypress="return (event.charCode >= 65 && event.charCode <= 90) || (event.charCode == 32) || (event.charCode >= 97 && event.charCode <= 122)">
+        <input type="text" name="textinputarea" id="ekeygiris" autocomplete="off" placeholder="Enter plain key" onkeypress="return (event.charCode >= 32 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 305 || event.charCode == 231 || event.charCode == 351 || event.charCode == 246 || event.charCode == 252 || event.charCode == 287)">
 
     <br>
     <br>
@@ -46,6 +47,7 @@
     </div>
     
     <div class="footer">
+        
         <p>Created by ♥ K.Eray Özaydın [<a href="https://kamileray.tk" target="_blank" style="text-decoration: none; color: #FFD369;">kamileray.tk</a>]</p>
       </div>
 </body>
