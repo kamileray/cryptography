@@ -36,7 +36,6 @@ Sizin ve arkadaşınızın arasındaki özel konuşma dilini ikinizden başka ki
 - Şifreli metin oluşturmak için atacağınız ilk adım, arkadaş(lar)ınızla aranızda ikinizin de bildiği gizli bir anahtar oluşturmak. (Ama, şşt! Bu şifre **gizli** olmalı🤫)
 
 #### Şifreleme
-- **Unutma!** İngiliz alfabesindeki harfler geçerlidir. (Şimdilik 😉)
 
 ![Cryptography](/img/ENG-1.png)
 
