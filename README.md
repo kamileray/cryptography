@@ -37,6 +37,9 @@ Scroll to learn **how to use it**!
 - That's so easy!
 - The basic step you will take to create a ciphertext is, creating a **key(keyword)** with your friend(s). (But ssh! This key must be **secret** 🤫)
 
+---
+- *NEW Features: There was a _160%_ increase with new letters and symbols for the best experience at large (ç,ş,ö,ğ,',%,&,?,!,0-9..)
+
 #### Encoding
 
 ![Cryptography](/img/ENG-1.png)
